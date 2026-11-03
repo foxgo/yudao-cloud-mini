@@ -5,7 +5,7 @@
     <modelVersion>4.0.0</modelVersion>
     <parent>
         <artifactId>yudao</artifactId>
-        <groupId>cn.iocoder.cloud</groupId>
+        <groupId>com.foxgo.platform</groupId>
         <version>${revision}</version>
     </parent>
     <packaging>pom</packaging>

@@ -131,7 +131,7 @@ xxl:
 yudao:
   info:
     version: 1.0.0
-    base-package: cn.iocoder.yudao.module.infra
+    base-package: com.foxgo.platform.module.infra
   web:
     admin-ui:
       url: http://dashboard.yudao.iocoder.cn # Admin 管理后台 UI 的地址
@@ -158,7 +158,7 @@ yudao:
     description: 提供管理员管理的所有功能
     version: ${yudao.info.version}
   codegen:
-    base-package: cn.iocoder.yudao
+    base-package: com.foxgo.platform
     db-schemas: ${spring.datasource.dynamic.datasource.master.name}
     front-type: 20 # 前端模版的类型，参见 CodegenFrontTypeEnum 枚举类
     vo-type: 10 # VO 的类型，参见 CodegenVOTypeEnum 枚举类

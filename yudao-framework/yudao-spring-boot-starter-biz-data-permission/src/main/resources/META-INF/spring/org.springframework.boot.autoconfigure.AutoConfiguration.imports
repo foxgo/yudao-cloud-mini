@@ -1,3 +1,3 @@
-cn.iocoder.yudao.framework.datapermission.config.YudaoDataPermissionAutoConfiguration
-cn.iocoder.yudao.framework.datapermission.config.YudaoDeptDataPermissionAutoConfiguration
-cn.iocoder.yudao.framework.datapermission.config.YudaoDataPermissionRpcAutoConfiguration
+com.foxgo.platform.framework.datapermission.config.YudaoDataPermissionAutoConfiguration
+com.foxgo.platform.framework.datapermission.config.YudaoDeptDataPermissionAutoConfiguration
+com.foxgo.platform.framework.datapermission.config.YudaoDataPermissionRpcAutoConfiguration
