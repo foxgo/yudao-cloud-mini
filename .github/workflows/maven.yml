@@ -5,9 +5,9 @@ name: Java CI with Maven
 
 on:
   push:
-    branches: [ master, master-jdk17, master-jdk25 ]
-  # pull_request:
-  #   branches: [ master ]
+    branches: [ master, master-jdk17, master-jdk25, "refactor/**" ]
+  pull_request:
+    branches: [ master ]
   workflow_dispatch:
 
 jobs:
