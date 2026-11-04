@@ -4,21 +4,21 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <parent>
         <groupId>com.foxgo.platform</groupId>
-        <artifactId>yudao-framework</artifactId>
+        <artifactId>foxgo-framework</artifactId>
         <version>${revision}</version>
     </parent>
     <modelVersion>4.0.0</modelVersion>
-    <artifactId>yudao-spring-boot-starter-web</artifactId>
+    <artifactId>foxgo-spring-boot-starter-web</artifactId>
     <packaging>jar</packaging>
 
     <name>${project.artifactId}</name>
     <description>Web 框架，全局异常、API 日志、脱敏、错误码等</description>
-    <url>https://github.com/YunaiV/ruoyi-vue-pro</url>
+    <url>https://github.com/foxgo/yudao-cloud-mini</url>
 
     <dependencies>
         <dependency>
             <groupId>com.foxgo.platform</groupId>
-            <artifactId>yudao-common</artifactId>
+            <artifactId>foxgo-common</artifactId>
         </dependency>
 
         <!-- Spring Boot 配置所需依赖 -->
@@ -57,7 +57,7 @@
         <!-- RPC 远程调用相关 -->
         <dependency>
             <groupId>com.foxgo.platform</groupId>
-            <artifactId>yudao-spring-boot-starter-rpc</artifactId>
+            <artifactId>foxgo-spring-boot-starter-rpc</artifactId>
             <optional>true</optional>
         </dependency>
 

@@ -4,22 +4,22 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <parent>
         <groupId>com.foxgo.platform</groupId>
-        <artifactId>yudao-framework</artifactId>
+        <artifactId>foxgo-framework</artifactId>
         <version>${revision}</version>
     </parent>
     <modelVersion>4.0.0</modelVersion>
-    <artifactId>yudao-spring-boot-starter-mq</artifactId>
+    <artifactId>foxgo-spring-boot-starter-mq</artifactId>
     <packaging>jar</packaging>
 
     <name>${project.artifactId}</name>
     <description>消息队列，支持 Redis、RocketMQ、RabbitMQ、Kafka 四种</description>
-    <url>https://github.com/YunaiV/ruoyi-vue-pro</url>
+    <url>https://github.com/foxgo/yudao-cloud-mini</url>
 
     <dependencies>
         <!-- DB 相关 -->
         <dependency>
             <groupId>com.foxgo.platform</groupId>
-            <artifactId>yudao-spring-boot-starter-redis</artifactId>
+            <artifactId>foxgo-spring-boot-starter-redis</artifactId>
         </dependency>
 
         <!-- 消息队列相关 -->

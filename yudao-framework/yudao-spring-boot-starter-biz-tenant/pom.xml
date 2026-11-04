@@ -3,59 +3,59 @@
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <parent>
-        <artifactId>yudao-framework</artifactId>
+        <artifactId>foxgo-framework</artifactId>
         <groupId>com.foxgo.platform</groupId>
         <version>${revision}</version>
     </parent>
     <modelVersion>4.0.0</modelVersion>
-    <artifactId>yudao-spring-boot-starter-biz-tenant</artifactId>
+    <artifactId>foxgo-spring-boot-starter-biz-tenant</artifactId>
     <packaging>jar</packaging>
 
     <name>${project.artifactId}</name>
     <description>多租户</description>
-    <url>https://github.com/YunaiV/ruoyi-vue-pro</url>
+    <url>https://github.com/foxgo/yudao-cloud-mini</url>
 
     <dependencies>
         <dependency>
             <groupId>com.foxgo.platform</groupId>
-            <artifactId>yudao-common</artifactId>
+            <artifactId>foxgo-common</artifactId>
         </dependency>
 
         <!-- Web 相关 -->
         <dependency>
             <groupId>com.foxgo.platform</groupId>
-            <artifactId>yudao-spring-boot-starter-security</artifactId>
+            <artifactId>foxgo-spring-boot-starter-security</artifactId>
         </dependency>
 
         <!-- DB 相关 -->
         <dependency>
             <groupId>com.foxgo.platform</groupId>
-            <artifactId>yudao-spring-boot-starter-mybatis</artifactId>
+            <artifactId>foxgo-spring-boot-starter-mybatis</artifactId>
         </dependency>
 
         <dependency>
             <groupId>com.foxgo.platform</groupId>
-            <artifactId>yudao-spring-boot-starter-redis</artifactId>
+            <artifactId>foxgo-spring-boot-starter-redis</artifactId>
         </dependency>
 
         <!-- RPC 远程调用相关 -->
         <dependency>
             <groupId>com.foxgo.platform</groupId>
-            <artifactId>yudao-spring-boot-starter-rpc</artifactId>
+            <artifactId>foxgo-spring-boot-starter-rpc</artifactId>
             <optional>true</optional>
         </dependency>
 
         <!-- Job 定时任务相关 -->
         <dependency>
             <groupId>com.foxgo.platform</groupId>
-            <artifactId>yudao-spring-boot-starter-job</artifactId>
+            <artifactId>foxgo-spring-boot-starter-job</artifactId>
             <optional>true</optional>
         </dependency>
 
         <!-- 消息队列相关 -->
         <dependency>
             <groupId>com.foxgo.platform</groupId>
-            <artifactId>yudao-spring-boot-starter-mq</artifactId>
+            <artifactId>foxgo-spring-boot-starter-mq</artifactId>
             <optional>true</optional>
         </dependency>
         <dependency>

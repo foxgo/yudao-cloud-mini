@@ -4,7 +4,7 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
     <groupId>com.foxgo.platform</groupId>
-    <artifactId>yudao</artifactId>
+    <artifactId>foxgo-platform</artifactId>
     <version>${revision}</version>
     <packaging>pom</packaging>
     <modules>
@@ -36,9 +36,9 @@
 <!--        <module>yudao-module-ai</module>-->
     </modules>
 
-    <name>${project.artifactId}</name>
-    <description>芋道项目基础脚手架</description>
-    <url>https://github.com/YunaiV/ruoyi-vue-pro</url>
+    <name>FoxGo Platform</name>
+    <description>FoxGo Platform 企业级微服务基础平台</description>
+    <url>https://github.com/foxgo/yudao-cloud-mini</url>
 
     <properties>
         <revision>2026.10-jdk8-SNAPSHOT</revision>
@@ -60,7 +60,7 @@
         <dependencies>
             <dependency>
                 <groupId>com.foxgo.platform</groupId>
-                <artifactId>yudao-dependencies</artifactId>
+                <artifactId>foxgo-dependencies</artifactId>
                 <version>${revision}</version>
                 <type>pom</type>
                 <scope>import</scope>

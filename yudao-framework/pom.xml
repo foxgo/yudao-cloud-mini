@@ -4,7 +4,7 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
     <parent>
-        <artifactId>yudao</artifactId>
+        <artifactId>foxgo-platform</artifactId>
         <groupId>com.foxgo.platform</groupId>
         <version>${revision}</version>
     </parent>
@@ -32,7 +32,7 @@
         <module>yudao-spring-boot-starter-biz-ip</module>
     </modules>
 
-    <artifactId>yudao-framework</artifactId>
+    <artifactId>foxgo-framework</artifactId>
     <description>
         该包是技术组件，每个子包，代表一个组件。每个组件包括两部分：
             1. core 包：是该组件的核心封装
@@ -43,6 +43,6 @@
             2. 业务组件：和业务相关的组件的封装，例如说数据字典、操作日志等等。
         如果是业务组件，Maven 名字会包含 biz
     </description>
-    <url>https://github.com/YunaiV/ruoyi-vue-pro</url>
+    <url>https://github.com/foxgo/yudao-cloud-mini</url>
 
 </project>

@@ -4,21 +4,21 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <parent>
         <groupId>com.foxgo.platform</groupId>
-        <artifactId>yudao-framework</artifactId>
+        <artifactId>foxgo-framework</artifactId>
         <version>${revision}</version>
     </parent>
     <modelVersion>4.0.0</modelVersion>
-    <artifactId>yudao-spring-boot-starter-websocket</artifactId>
+    <artifactId>foxgo-spring-boot-starter-websocket</artifactId>
     <packaging>jar</packaging>
 
     <name>${project.artifactId}</name>
     <description>WebSocket 框架，支持多节点的广播</description>
-    <url>https://github.com/YunaiV/ruoyi-vue-pro</url>
+    <url>https://github.com/foxgo/yudao-cloud-mini</url>
 
     <dependencies>
         <dependency>
             <groupId>com.foxgo.platform</groupId>
-            <artifactId>yudao-common</artifactId>
+            <artifactId>foxgo-common</artifactId>
         </dependency>
 
         <!-- Web 相关 -->
@@ -28,7 +28,7 @@
                  如果让 security 拓展 websocket 的话，会导致 websocket 组件的封装很散，进而增大理解成本。
             -->
             <groupId>com.foxgo.platform</groupId>
-            <artifactId>yudao-spring-boot-starter-security</artifactId>
+            <artifactId>foxgo-spring-boot-starter-security</artifactId>
             <scope>provided</scope>
         </dependency>
 
@@ -40,7 +40,7 @@
         <!-- 消息队列相关 -->
         <dependency>
             <groupId>com.foxgo.platform</groupId>
-            <artifactId>yudao-spring-boot-starter-mq</artifactId>
+            <artifactId>foxgo-spring-boot-starter-mq</artifactId>
         </dependency>
         <dependency>
             <groupId>org.springframework.kafka</groupId>
@@ -64,7 +64,7 @@
                 因为广播某个类型的用户时候，需要根据租户过滤下，避免广播到别的租户！
             -->
             <groupId>com.foxgo.platform</groupId>
-            <artifactId>yudao-spring-boot-starter-biz-tenant</artifactId>
+            <artifactId>foxgo-spring-boot-starter-biz-tenant</artifactId>
             <scope>provided</scope>
         </dependency>
     </dependencies>
