@@ -20,9 +20,9 @@ script/docker-compose
 
 | 服务 | 镜像 | 说明 |
 | --- | --- | --- |
-| `mysql` | `mysql:8.4` | 首次启动导入 `sql/mysql/ruoyi-vue-pro.sql`，数据卷 `foxgo-platform_mysql-data` |
-| `redis` | `redis:7.4-alpine` | 开启密码与 AOF，数据卷 `foxgo-platform_redis-data` |
-| `nacos` | `nacos/nacos-server:v3.0.3` | 可选（profile `nacos`），单机 + 嵌入式存储，数据卷 `foxgo-platform_nacos-data` |
+| `mysql` | `mysql:8.4` | 首次启动导入 `sql/mysql/ruoyi-vue-pro.sql`，数据卷 `yudao-cloud_mysql-data` |
+| `redis` | `redis:7.4-alpine` | 开启密码与 AOF，数据卷 `yudao-cloud_redis-data` |
+| `nacos` | `nacos/nacos-server:v3.0.3` | 可选（profile `nacos`），单机 + 嵌入式存储，数据卷 `yudao-cloud_nacos-data` |
 | `gateway` | `foxgo-gateway:${IMAGE_TAG}` | 由 `yudao-gateway/Dockerfile` 构建，端口 48080，Nacos 服务名 `gateway-server` |
 | `system-server` | `foxgo-module-system-server:${IMAGE_TAG}` | 由模块 Dockerfile 构建，端口 48081，Nacos 服务名 `system-server` |
 | `infra-server` | `foxgo-module-infra-server:${IMAGE_TAG}` | 由模块 Dockerfile 构建，端口 48082，Nacos 服务名 `infra-server` |
@@ -160,12 +160,12 @@ docker compose restart web
 docker compose down
 ```
 
-**不要执行 `docker compose down -v`**，它会删除 `foxgo-platform_mysql-data`、`foxgo-platform_redis-data`、`foxgo-platform_nacos-data` 数据卷，数据库内容将全部丢失。
+**不要执行 `docker compose down -v`**，它会删除 `yudao-cloud_mysql-data`、`yudao-cloud_redis-data`、`yudao-cloud_nacos-data` 数据卷，数据库内容将全部丢失。
 
 ## 数据库初始化说明
 
 - SQL 只在 `mysql-data` 数据卷为空（首次启动）时执行一次；之后修改 SQL 文件、`.env` 中的 `MYSQL_*` 账号密码，都不会作用于已有数据库。
-- 首次导入中途失败（例如容器被强制停止），数据卷会处于半初始化状态，需要确认数据可丢弃后执行 `docker compose down`、`docker volume rm foxgo-platform_mysql-data` 再重新启动。
+- 首次导入中途失败（例如容器被强制停止），数据卷会处于半初始化状态，需要确认数据可丢弃后执行 `docker compose down`、`docker volume rm yudao-cloud_mysql-data` 再重新启动。
 - 已有数据卷升级到新版本时，SQL 不会自动执行。请先备份，再手动执行对应的升级 SQL，例如：
 
 ```shell
