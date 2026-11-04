@@ -1,20 +1,17 @@
+# FoxGo Platform
+
 <p align="center">
  <img src="https://img.shields.io/badge/Spring%20Cloud-2021.0.9-blue.svg" alt="Coverage Status">
  <img src="https://img.shields.io/badge/Spring%20Boot-2.7.18-blue.svg" alt="Downloads">
  <img src="https://img.shields.io/badge/Vue-3.2-blue.svg" alt="Downloads">
- <img src="https://img.shields.io/github/license/YunaiV/yudao-cloud" alt="Downloads" />
+ <img src="https://img.shields.io/github/license/foxgo/yudao-cloud-mini" alt="Downloads" />
 </p>
 
-**严肃声明：现在、未来都不会有商业版本，所有代码全部开源!！**
+**FoxGo Platform** 是面向企业应用的微服务基础平台，统一使用 Java 命名空间 `com.foxgo.platform`、Maven GroupId `com.foxgo.platform`，内部 Maven ArtifactId 使用 `foxgo-` 前缀。
 
-**「我喜欢写代码，乐此不疲」**  
-**「我喜欢做开源，以此为乐」**
+> 本项目基于 [yudaocode/yudao-cloud-mini](https://github.com/yudaocode/yudao-cloud-mini) 二次开发。上游项目及第三方组件的版权、许可证声明继续保留；本仓库的授权以根目录 `LICENSE` 为准。
 
-我 🐶 在上海艰苦奋斗，早中晚在 top3 大厂认真搬砖，夜里为开源做贡献。
-
-如果这个项目让你有所收获，记得 Star 关注哦，这对我是非常不错的鼓励与支持。
-
-可参考 [《迁移文档》](https://cloud.iocoder.cn/migrate-module/) ，只需要 5-10 分钟，即可将【完整版】按需迁移到【精简版】
+上游项目的迁移与技术文档仍可参考 [芋道 Cloud 文档](https://cloud.iocoder.cn/)。
 
 ## 🐶 新手必读
 
@@ -38,11 +35,9 @@
 
 ## 🐯 平台简介
 
-**芋道**，以开发者为中心，打造中国第一流的快速开发平台，全部开源，个人与企业可 100% 免费使用。
+**FoxGo Platform** 基于 Spring Cloud Alibaba、Spring Cloud Gateway、Nacos 构建，当前精简版包含系统管理、基础设施、公共框架与服务网关等模块，作为企业业务系统的基础技术平台。
 
-> 有任何问题，或者想要的功能，可以在 _Issues_ 中提给艿艿。
->
-> 😜 给项目点点 Star 吧，这对我们真的很重要！
+> 本仓库保留上游项目的开源许可与归属信息；FoxGo 的命名空间和 Maven 坐标仅用于标识本项目的二次开发代码与构建模块。
 
 ![架构图](/.image/common/yudao-cloud-architecture.png)
 
@@ -107,7 +102,7 @@
 
 **为什么推荐使用本项目？**
 
-① 本项目采用比 Apache 2.0 更宽松的 [MIT License](https://gitee.com/zhijiantianya/ruoyi-vue-pro/blob/master/LICENSE) 开源协议，个人与企业可 100% 免费使用，不用保留类作者、Copyright 信息。
+① 本项目采用 [MIT License](LICENSE)。分发软件副本或其实质性部分时，必须保留原始版权声明和许可证声明；具体义务以根目录 `LICENSE` 文件为准。
 
 ② 代码全部开源，不会像其他项目一样，只开源部分代码，让你无法了解整个项目的架构设计。[国产开源项目对比](https://www.yuque.com/xiatian-bsgny/lm0ec1/wqf8mn)
 
@@ -378,28 +373,28 @@
 
 | 项目                    | 说明                 |
 |-----------------------|--------------------|
-| `yudao-dependencies`  | Maven 依赖版本管理       |
-| `yudao-framework`     | Java 框架拓展          |
-| `yudao-server`        | 管理后台 + 用户 APP 的服务端 |
-| `yudao-module-system` | 系统功能的 Module 模块    |
-| `yudao-module-infra`  | 基础设施的 Module 模块    |
-| `yudao-module-bpm`    | 工作流程的 Module 模块    |
-| `yudao-module-pay`    | 支付系统的 Module 模块    |
-| `yudao-module-report` | 大屏报表 Module 模块     |
-| `yudao-module-mp`     | 微信公众号的 Module 模块   |
-| `yudao-module-mall`   | 商城系统的 Module 模块    |
-| `yudao-module-member` | 会员中心的 Module 模块    |
-| `yudao-module-erp`    | ERP 系统的 Module 模块  |
-| `yudao-module-wms`    | WMS 系统的 Module 模块  |
-| `yudao-module-crm`    | CRM 系统的 Module 模块  |
-| `yudao-module-mes`    | MES 系统的 Module 模块  |
-| `yudao-module-hrm`    | HRM 人力资源管理的 Module 模块 |
-| `yudao-module-fms`    | FMS 财务管理的 Module 模块 |
-| `yudao-module-pms`    | PMS 项目管理的 Module 模块 |
-| `yudao-module-oa`     | OA 协同办公的 Module 模块 |
-| `yudao-module-ai`     | AI 大模型的 Module 模块  |
-| `yudao-module-iot`    | IoT 物联网的 Module 模块 |
-| `yudao-module-im`     | IM 即时通讯的 Module 模块 |
+| `foxgo-dependencies`  | Maven 依赖版本管理       |
+| `foxgo-framework`     | Java 框架拓展          |
+| `foxgo-server`        | 管理后台 + 用户 APP 的服务端 |
+| `foxgo-module-system` | 系统功能的 Module 模块    |
+| `foxgo-module-infra`  | 基础设施的 Module 模块    |
+| `foxgo-module-bpm`    | 工作流程的 Module 模块    |
+| `foxgo-module-pay`    | 支付系统的 Module 模块    |
+| `foxgo-module-report` | 大屏报表 Module 模块     |
+| `foxgo-module-mp`     | 微信公众号的 Module 模块   |
+| `foxgo-module-mall`   | 商城系统的 Module 模块    |
+| `foxgo-module-member` | 会员中心的 Module 模块    |
+| `foxgo-module-erp`    | ERP 系统的 Module 模块  |
+| `foxgo-module-wms`    | WMS 系统的 Module 模块  |
+| `foxgo-module-crm`    | CRM 系统的 Module 模块  |
+| `foxgo-module-mes`    | MES 系统的 Module 模块  |
+| `foxgo-module-hrm`    | HRM 人力资源管理的 Module 模块 |
+| `foxgo-module-fms`    | FMS 财务管理的 Module 模块 |
+| `foxgo-module-pms`    | PMS 项目管理的 Module 模块 |
+| `foxgo-module-oa`     | OA 协同办公的 Module 模块 |
+| `foxgo-module-ai`     | AI 大模型的 Module 模块  |
+| `foxgo-module-iot`    | IoT 物联网的 Module 模块 |
+| `foxgo-module-im`     | IM 即时通讯的 Module 模块 |
 
 ### 框架
 

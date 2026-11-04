@@ -4,14 +4,14 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>cn.iocoder.cloud</groupId>
-    <artifactId>yudao-dependencies</artifactId>
+    <groupId>com.foxgo.platform</groupId>
+    <artifactId>foxgo-dependencies</artifactId>
     <version>${revision}</version>
     <packaging>pom</packaging>
 
     <name>${project.artifactId}</name>
     <description>基础 bom 文件，管理整个项目的依赖版本</description>
-    <url>https://github.com/YunaiV/ruoyi-vue-pro</url>
+    <url>https://github.com/foxgo/yudao-cloud-mini</url>
 
     <properties>
         <revision>2026.10-jdk8-SNAPSHOT</revision>
@@ -173,18 +173,18 @@
                 </exclusions>
             </dependency>
             <dependency>
-                <groupId>cn.iocoder.cloud</groupId>
-                <artifactId>yudao-spring-boot-starter-biz-tenant</artifactId>
+                <groupId>com.foxgo.platform</groupId>
+                <artifactId>foxgo-spring-boot-starter-biz-tenant</artifactId>
                 <version>${revision}</version>
             </dependency>
             <dependency>
-                <groupId>cn.iocoder.cloud</groupId>
-                <artifactId>yudao-spring-boot-starter-biz-data-permission</artifactId>
+                <groupId>com.foxgo.platform</groupId>
+                <artifactId>foxgo-spring-boot-starter-biz-data-permission</artifactId>
                 <version>${revision}</version>
             </dependency>
             <dependency>
-                <groupId>cn.iocoder.cloud</groupId>
-                <artifactId>yudao-spring-boot-starter-biz-ip</artifactId>
+                <groupId>com.foxgo.platform</groupId>
+                <artifactId>foxgo-spring-boot-starter-biz-ip</artifactId>
                 <version>${revision}</version>
             </dependency>
 
@@ -197,27 +197,27 @@
             </dependency>
 
             <dependency>
-                <groupId>cn.iocoder.cloud</groupId>
-                <artifactId>yudao-spring-boot-starter-env</artifactId>
+                <groupId>com.foxgo.platform</groupId>
+                <artifactId>foxgo-spring-boot-starter-env</artifactId>
                 <version>${revision}</version>
             </dependency>
 
             <!-- Web 相关 -->
             <dependency>
-                <groupId>cn.iocoder.cloud</groupId>
-                <artifactId>yudao-spring-boot-starter-web</artifactId>
+                <groupId>com.foxgo.platform</groupId>
+                <artifactId>foxgo-spring-boot-starter-web</artifactId>
                 <version>${revision}</version>
             </dependency>
 
             <dependency>
-                <groupId>cn.iocoder.cloud</groupId>
-                <artifactId>yudao-spring-boot-starter-security</artifactId>
+                <groupId>com.foxgo.platform</groupId>
+                <artifactId>foxgo-spring-boot-starter-security</artifactId>
                 <version>${revision}</version>
             </dependency>
 
             <dependency>
-                <groupId>cn.iocoder.cloud</groupId>
-                <artifactId>yudao-spring-boot-starter-websocket</artifactId>
+                <groupId>com.foxgo.platform</groupId>
+                <artifactId>foxgo-spring-boot-starter-websocket</artifactId>
                 <version>${revision}</version>
             </dependency>
 
@@ -239,8 +239,8 @@
 
             <!-- DB 相关 -->
             <dependency>
-                <groupId>cn.iocoder.cloud</groupId>
-                <artifactId>yudao-spring-boot-starter-mybatis</artifactId>
+                <groupId>com.foxgo.platform</groupId>
+                <artifactId>foxgo-spring-boot-starter-mybatis</artifactId>
                 <version>${revision}</version>
             </dependency>
             <dependency>
@@ -293,8 +293,8 @@
             </dependency>
 
             <dependency>
-                <groupId>cn.iocoder.cloud</groupId>
-                <artifactId>yudao-spring-boot-starter-redis</artifactId>
+                <groupId>com.foxgo.platform</groupId>
+                <artifactId>foxgo-spring-boot-starter-redis</artifactId>
                 <version>${revision}</version>
             </dependency>
 
@@ -384,8 +384,8 @@
 
             <!-- RPC 远程调用相关 -->
             <dependency>
-                <groupId>cn.iocoder.cloud</groupId>
-                <artifactId>yudao-spring-boot-starter-rpc</artifactId>
+                <groupId>com.foxgo.platform</groupId>
+                <artifactId>foxgo-spring-boot-starter-rpc</artifactId>
                 <version>${revision}</version>
             </dependency>
 
@@ -400,15 +400,15 @@
                 <version>${xxl-job.version}</version>
             </dependency>
             <dependency>
-                <groupId>cn.iocoder.cloud</groupId>
-                <artifactId>yudao-spring-boot-starter-job</artifactId>
+                <groupId>com.foxgo.platform</groupId>
+                <artifactId>foxgo-spring-boot-starter-job</artifactId>
                 <version>${revision}</version>
             </dependency>
 
             <!-- 消息队列相关 -->
             <dependency>
-                <groupId>cn.iocoder.cloud</groupId>
-                <artifactId>yudao-spring-boot-starter-mq</artifactId>
+                <groupId>com.foxgo.platform</groupId>
+                <artifactId>foxgo-spring-boot-starter-mq</artifactId>
                 <version>${revision}</version>
             </dependency>
             <dependency>
@@ -425,8 +425,8 @@
 
             <!-- 服务保障相关 -->
             <dependency>
-                <groupId>cn.iocoder.cloud</groupId>
-                <artifactId>yudao-spring-boot-starter-protection</artifactId>
+                <groupId>com.foxgo.platform</groupId>
+                <artifactId>foxgo-spring-boot-starter-protection</artifactId>
                 <version>${revision}</version>
             </dependency>
 
@@ -444,8 +444,8 @@
 
             <!-- 监控相关 -->
             <dependency>
-                <groupId>cn.iocoder.cloud</groupId>
-                <artifactId>yudao-spring-boot-starter-monitor</artifactId>
+                <groupId>com.foxgo.platform</groupId>
+                <artifactId>foxgo-spring-boot-starter-monitor</artifactId>
                 <version>${revision}</version>
             </dependency>
 
@@ -518,14 +518,14 @@
 
             <!-- 工具类相关 -->
             <dependency>
-                <groupId>cn.iocoder.cloud</groupId>
-                <artifactId>yudao-common</artifactId>
+                <groupId>com.foxgo.platform</groupId>
+                <artifactId>foxgo-common</artifactId>
                 <version>${revision}</version>
             </dependency>
 
             <dependency>
-                <groupId>cn.iocoder.cloud</groupId>
-                <artifactId>yudao-spring-boot-starter-excel</artifactId>
+                <groupId>com.foxgo.platform</groupId>
+                <artifactId>foxgo-spring-boot-starter-excel</artifactId>
                 <version>${revision}</version>
             </dependency>
 

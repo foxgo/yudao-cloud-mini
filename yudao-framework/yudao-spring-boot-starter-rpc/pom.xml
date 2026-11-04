@@ -3,24 +3,24 @@
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <parent>
-        <artifactId>yudao-framework</artifactId>
-        <groupId>cn.iocoder.cloud</groupId>
+        <artifactId>foxgo-framework</artifactId>
+        <groupId>com.foxgo.platform</groupId>
         <version>${revision}</version>
     </parent>
     <modelVersion>4.0.0</modelVersion>
-    <artifactId>yudao-spring-boot-starter-rpc</artifactId>
+    <artifactId>foxgo-spring-boot-starter-rpc</artifactId>
     <packaging>jar</packaging>
 
     <name>${project.artifactId}</name>
     <description>
         OpenFeign：提供 RESTful API 的调用
     </description>
-    <url>https://github.com/YunaiV/ruoyi-vue-pro</url>
+    <url>https://github.com/foxgo/yudao-cloud-mini</url>
 
     <dependencies>
         <dependency>
-            <groupId>cn.iocoder.cloud</groupId>
-            <artifactId>yudao-common</artifactId>
+            <groupId>com.foxgo.platform</groupId>
+            <artifactId>foxgo-common</artifactId>
         </dependency>
 
         <!-- RPC 远程调用相关 -->

@@ -3,12 +3,12 @@
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <parent>
-        <groupId>cn.iocoder.cloud</groupId>
-        <artifactId>yudao-framework</artifactId>
+        <groupId>com.foxgo.platform</groupId>
+        <artifactId>foxgo-framework</artifactId>
         <version>${revision}</version>
     </parent>
     <modelVersion>4.0.0</modelVersion>
-    <artifactId>yudao-spring-boot-starter-biz-ip</artifactId>
+    <artifactId>foxgo-spring-boot-starter-biz-ip</artifactId>
     <packaging>jar</packaging>
 
     <name>${project.artifactId}</name>
@@ -18,12 +18,12 @@
         2. 城市功能：查询城市编码对应的城市信息
             基于 https://github.com/modood/Administrative-divisions-of-China 实现
     </description>
-    <url>https://github.com/YunaiV/ruoyi-vue-pro</url>
+    <url>https://github.com/foxgo/yudao-cloud-mini</url>
 
     <dependencies>
         <dependency>
-            <groupId>cn.iocoder.cloud</groupId>
-            <artifactId>yudao-common</artifactId>
+            <groupId>com.foxgo.platform</groupId>
+            <artifactId>foxgo-common</artifactId>
         </dependency>
 
         <!-- IP地址检索 -->

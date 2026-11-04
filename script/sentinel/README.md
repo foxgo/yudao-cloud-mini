@@ -26,7 +26,7 @@
 | `src/main/java/.../system/sentineldemo/` | 示例 Feign 客户端 `DemoSentinelInfraApi` 及其 `DemoSentinelInfraApiFallbackFactory`，配置类 `DemoSentinelConfiguration`（含 URL 资源被阻断时的 `BlockExceptionHandler`），示例接口 `controller/admin/DemoSentinelController` | `yudao-module-system-server/src/main/java` 的同名包 |
 | `src/main/java/.../infra/sentineldemo/` | 被调用的 RPC 接口 `DemoSentinelRpcController`，模拟慢调用、业务错误 | `yudao-module-infra-server/src/main/java` 的同名包 |
 
-示例的包名分别在 `gateway-server`（`cn.iocoder.yudao.gateway`）、`system-server`、`infra-server` 的扫描范围内；`DemoSentinelController` 放在 `controller.admin` 子包下，才会添加 `/admin-api` 前缀。不修改 `yudao-module-infra-api` 模块、已有的 `RpcConfiguration`、Feign 客户端及安全配置。
+示例的包名分别在 `gateway-server`（`com.foxgo.platform.gateway`）、`system-server`、`infra-server` 的扫描范围内；`DemoSentinelController` 放在 `controller.admin` 子包下，才会添加 `/admin-api` 前缀。不修改 `yudao-module-infra-api` 模块、已有的 `RpcConfiguration`、Feign 客户端及安全配置。
 
 规则 JSON 是严格的 JSON，不能包含注释，字段说明见项目文档。资源名与示例一一对应：
 

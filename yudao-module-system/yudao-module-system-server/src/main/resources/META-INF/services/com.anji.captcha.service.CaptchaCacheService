@@ -1,1 +1,1 @@
-cn.iocoder.yudao.module.system.framework.captcha.core.RedisCaptchaServiceImpl
+com.foxgo.platform.module.system.framework.captcha.core.RedisCaptchaServiceImpl

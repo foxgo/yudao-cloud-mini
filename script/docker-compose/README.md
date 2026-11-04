@@ -23,9 +23,9 @@ script/docker-compose
 | `mysql` | `mysql:8.4` | 首次启动导入 `sql/mysql/ruoyi-vue-pro.sql`，数据卷 `yudao-cloud_mysql-data` |
 | `redis` | `redis:7.4-alpine` | 开启密码与 AOF，数据卷 `yudao-cloud_redis-data` |
 | `nacos` | `nacos/nacos-server:v3.0.3` | 可选（profile `nacos`），单机 + 嵌入式存储，数据卷 `yudao-cloud_nacos-data` |
-| `gateway` | `yudao-gateway:${IMAGE_TAG}` | 由 `yudao-gateway/Dockerfile` 构建，端口 48080，Nacos 服务名 `gateway-server` |
-| `system-server` | `yudao-module-system-server:${IMAGE_TAG}` | 由模块 Dockerfile 构建，端口 48081，Nacos 服务名 `system-server` |
-| `infra-server` | `yudao-module-infra-server:${IMAGE_TAG}` | 由模块 Dockerfile 构建，端口 48082，Nacos 服务名 `infra-server` |
+| `gateway` | `foxgo-gateway:${IMAGE_TAG}` | 由 `yudao-gateway/Dockerfile` 构建，端口 48080，Nacos 服务名 `gateway-server` |
+| `system-server` | `foxgo-module-system-server:${IMAGE_TAG}` | 由模块 Dockerfile 构建，端口 48081，Nacos 服务名 `system-server` |
+| `infra-server` | `foxgo-module-infra-server:${IMAGE_TAG}` | 由模块 Dockerfile 构建，端口 48082，Nacos 服务名 `infra-server` |
 | `web` | `nginx:1.28-alpine` | 对宿主机开放 `${WEB_PORT}`（默认 8080） |
 
 请求链路：浏览器 → `web`（Nginx）→ `gateway` → 通过 Nacos 发现 `system-server`、`infra-server`。`gateway` 只依赖 Nacos，不连接 MySQL、Redis。
@@ -47,7 +47,7 @@ script/docker-compose
 mvn clean package -pl yudao-gateway,yudao-module-system/yudao-module-system-server,yudao-module-infra/yudao-module-infra-server -am -Dmaven.test.skip=true
 ```
 
-产物为 `yudao-gateway/target/yudao-gateway.jar`、`yudao-module-system/yudao-module-system-server/target/yudao-module-system-server.jar`、`yudao-module-infra/yudao-module-infra-server/target/yudao-module-infra-server.jar`，`docker compose build` 时由各模块的 Dockerfile 复制进镜像。
+产物为 `yudao-gateway/target/foxgo-gateway.jar`、`yudao-module-system/yudao-module-system-server/target/foxgo-module-system-server.jar`、`yudao-module-infra/yudao-module-infra-server/target/foxgo-module-infra-server.jar`，`docker compose build` 时由各模块的 Dockerfile 复制进镜像。
 
 ## 2. 准备前端产物
 

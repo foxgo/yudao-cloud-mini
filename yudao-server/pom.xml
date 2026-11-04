@@ -3,164 +3,164 @@
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <parent>
-        <groupId>cn.iocoder.cloud</groupId>
-        <artifactId>yudao</artifactId>
+        <groupId>com.foxgo.platform</groupId>
+        <artifactId>foxgo-platform</artifactId>
         <version>${revision}</version>
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>yudao-server</artifactId>
+    <artifactId>foxgo-server</artifactId>
     <packaging>jar</packaging>
 
     <name>${project.artifactId}</name>
     <description>
-        后端 Server 的主项目，通过引入需要 yudao-module-xxx 的依赖，
+        后端 Server 的主项目，通过引入需要 foxgo-module-xxx 的依赖，
         从而实现提供 RESTful API 给 yudao-ui-admin、yudao-ui-user 等前端项目。
         本质上来说，它就是个空壳（容器）！
     </description>
-    <url>https://github.com/YunaiV/ruoyi-vue-pro</url>
+    <url>https://github.com/foxgo/yudao-cloud-mini</url>
 
     <dependencies>
         <dependency>
-            <groupId>cn.iocoder.cloud</groupId>
-            <artifactId>yudao-module-system-server</artifactId>
+            <groupId>com.foxgo.platform</groupId>
+            <artifactId>foxgo-module-system-server</artifactId>
             <version>${revision}</version>
         </dependency>
         <dependency>
-            <groupId>cn.iocoder.cloud</groupId>
-            <artifactId>yudao-module-infra-server</artifactId>
+            <groupId>com.foxgo.platform</groupId>
+            <artifactId>foxgo-module-infra-server</artifactId>
             <version>${revision}</version>
         </dependency>
 
         <!-- 会员中心。默认注释，保证编译速度 -->
 <!--        <dependency>-->
-<!--            <groupId>cn.iocoder.cloud</groupId>-->
-<!--            <artifactId>yudao-module-member-server</artifactId>-->
+<!--            <groupId>com.foxgo.platform</groupId>-->
+<!--            <artifactId>foxgo-module-member-server</artifactId>-->
 <!--            <version>${revision}</version>-->
 <!--        </dependency>-->
 
         <!-- 数据报表。默认注释，保证编译速度 -->
 <!--        <dependency>-->
-<!--            <groupId>cn.iocoder.cloud</groupId>-->
-<!--            <artifactId>yudao-module-report-server</artifactId>-->
+<!--            <groupId>com.foxgo.platform</groupId>-->
+<!--            <artifactId>foxgo-module-report-server</artifactId>-->
 <!--            <version>${revision}</version>-->
 <!--        </dependency>-->
         <!-- 工作流。默认注释，保证编译速度 -->
 <!--        <dependency>-->
-<!--            <groupId>cn.iocoder.cloud</groupId>-->
-<!--            <artifactId>yudao-module-bpm-server</artifactId>-->
+<!--            <groupId>com.foxgo.platform</groupId>-->
+<!--            <artifactId>foxgo-module-bpm-server</artifactId>-->
 <!--            <version>${revision}</version>-->
 <!--        </dependency>-->
         <!-- 支付服务。默认注释，保证编译速度 -->
 <!--        <dependency>-->
-<!--            <groupId>cn.iocoder.cloud</groupId>-->
-<!--            <artifactId>yudao-module-pay-server</artifactId>-->
+<!--            <groupId>com.foxgo.platform</groupId>-->
+<!--            <artifactId>foxgo-module-pay-server</artifactId>-->
 <!--            <version>${revision}</version>-->
 <!--        </dependency>-->
 
         <!-- 微信公众号模块。默认注释，保证编译速度 -->
 <!--        <dependency>-->
-<!--            <groupId>cn.iocoder.cloud</groupId>-->
-<!--            <artifactId>yudao-module-mp-server</artifactId>-->
+<!--            <groupId>com.foxgo.platform</groupId>-->
+<!--            <artifactId>foxgo-module-mp-server</artifactId>-->
 <!--            <version>${revision}</version>-->
 <!--        </dependency>-->
 
         <!-- 商城相关模块。默认注释，保证编译速度-->
 <!--        <dependency>-->
-<!--            <groupId>cn.iocoder.cloud</groupId>-->
-<!--            <artifactId>yudao-module-product-server</artifactId>-->
+<!--            <groupId>com.foxgo.platform</groupId>-->
+<!--            <artifactId>foxgo-module-product-server</artifactId>-->
 <!--            <version>${revision}</version>-->
 <!--        </dependency>-->
 <!--        <dependency>-->
-<!--            <groupId>cn.iocoder.cloud</groupId>-->
-<!--            <artifactId>yudao-module-promotion-server</artifactId>-->
+<!--            <groupId>com.foxgo.platform</groupId>-->
+<!--            <artifactId>foxgo-module-promotion-server</artifactId>-->
 <!--            <version>${revision}</version>-->
 <!--        </dependency>-->
 <!--        <dependency>-->
-<!--            <groupId>cn.iocoder.cloud</groupId>-->
-<!--            <artifactId>yudao-module-trade-server</artifactId>-->
+<!--            <groupId>com.foxgo.platform</groupId>-->
+<!--            <artifactId>foxgo-module-trade-server</artifactId>-->
 <!--            <version>${revision}</version>-->
 <!--        </dependency>-->
 <!--        <dependency>-->
-<!--            <groupId>cn.iocoder.cloud</groupId>-->
-<!--            <artifactId>yudao-module-statistics-server</artifactId>-->
+<!--            <groupId>com.foxgo.platform</groupId>-->
+<!--            <artifactId>foxgo-module-statistics-server</artifactId>-->
 <!--            <version>${revision}</version>-->
 <!--        </dependency>-->
 
         <!-- CRM 相关模块。默认注释，保证编译速度 -->
 <!--        <dependency>-->
-<!--            <groupId>cn.iocoder.cloud</groupId>-->
-<!--            <artifactId>yudao-module-crm-server</artifactId>-->
+<!--            <groupId>com.foxgo.platform</groupId>-->
+<!--            <artifactId>foxgo-module-crm-server</artifactId>-->
 <!--            <version>${revision}</version>-->
 <!--        </dependency>-->
 
         <!-- ERP 相关模块。默认注释，保证编译速度 -->
 <!--        <dependency>-->
-<!--            <groupId>cn.iocoder.cloud</groupId>-->
-<!--            <artifactId>yudao-module-erp-server</artifactId>-->
+<!--            <groupId>com.foxgo.platform</groupId>-->
+<!--            <artifactId>foxgo-module-erp-server</artifactId>-->
 <!--            <version>${revision}</version>-->
 <!--        </dependency>-->
 
         <!-- AI 大模型相关模块。默认注释，保证编译速度 -->
 <!--        <dependency>-->
-<!--            <groupId>cn.iocoder.cloud</groupId>-->
-<!--            <artifactId>yudao-module-ai-server</artifactId>-->
+<!--            <groupId>com.foxgo.platform</groupId>-->
+<!--            <artifactId>foxgo-module-ai-server</artifactId>-->
 <!--            <version>${revision}</version>-->
 <!--        </dependency>-->
 
         <!-- IoT 物联网相关模块。默认注释，保证编译速度 -->
 <!--        <dependency>-->
-<!--            <groupId>cn.iocoder.cloud</groupId>-->
-<!--            <artifactId>yudao-module-iot-server</artifactId>-->
+<!--            <groupId>com.foxgo.platform</groupId>-->
+<!--            <artifactId>foxgo-module-iot-server</artifactId>-->
 <!--            <version>${revision}</version>-->
 <!--        </dependency>-->
 
         <!-- MES 制造执行系统相关模块 -->
 <!--        <dependency>-->
-<!--            <groupId>cn.iocoder.cloud</groupId>-->
-<!--            <artifactId>yudao-module-mes-server</artifactId>-->
+<!--            <groupId>com.foxgo.platform</groupId>-->
+<!--            <artifactId>foxgo-module-mes-server</artifactId>-->
 <!--            <version>${revision}</version>-->
 <!--        </dependency>-->
 
         <!-- WMS 仓库管理模块 -->
 <!--        <dependency>-->
-<!--            <groupId>cn.iocoder.cloud</groupId>-->
-<!--            <artifactId>yudao-module-wms-server</artifactId>-->
+<!--            <groupId>com.foxgo.platform</groupId>-->
+<!--            <artifactId>foxgo-module-wms-server</artifactId>-->
 <!--            <version>${revision}</version>-->
 <!--        </dependency>-->
 
         <!-- IM 即时通讯模块 -->
 <!--        <dependency>-->
-<!--            <groupId>cn.iocoder.cloud</groupId>-->
-<!--            <artifactId>yudao-module-im-server</artifactId>-->
+<!--            <groupId>com.foxgo.platform</groupId>-->
+<!--            <artifactId>foxgo-module-im-server</artifactId>-->
 <!--            <version>${revision}</version>-->
 <!--        </dependency>-->
 
         <!-- HRM 人力资源管理模块。默认注释，按需启用 -->
 <!--        <dependency>-->
-<!--            <groupId>cn.iocoder.cloud</groupId>-->
-<!--            <artifactId>yudao-module-hrm-server</artifactId>-->
+<!--            <groupId>com.foxgo.platform</groupId>-->
+<!--            <artifactId>foxgo-module-hrm-server</artifactId>-->
 <!--            <version>${revision}</version>-->
 <!--        </dependency>-->
 
         <!-- FMS 财务管理模块。默认注释，按需启用 -->
 <!--        <dependency>-->
-<!--            <groupId>cn.iocoder.cloud</groupId>-->
-<!--            <artifactId>yudao-module-fms-server</artifactId>-->
+<!--            <groupId>com.foxgo.platform</groupId>-->
+<!--            <artifactId>foxgo-module-fms-server</artifactId>-->
 <!--            <version>${revision}</version>-->
 <!--        </dependency>-->
 
         <!-- PMS 项目管理模块。默认注释，按需启用 -->
 <!--        <dependency>-->
-<!--            <groupId>cn.iocoder.cloud</groupId>-->
-<!--            <artifactId>yudao-module-pms-server</artifactId>-->
+<!--            <groupId>com.foxgo.platform</groupId>-->
+<!--            <artifactId>foxgo-module-pms-server</artifactId>-->
 <!--            <version>${revision}</version>-->
 <!--        </dependency>-->
 
         <!-- OA 办公自动化模块。默认注释，保证编译速度 -->
 <!--        <dependency>-->
-<!--            <groupId>cn.iocoder.cloud</groupId>-->
-<!--            <artifactId>yudao-module-oa-server</artifactId>-->
+<!--            <groupId>com.foxgo.platform</groupId>-->
+<!--            <artifactId>foxgo-module-oa-server</artifactId>-->
 <!--            <version>${revision}</version>-->
 <!--        </dependency>-->
 
@@ -173,8 +173,8 @@
 
         <!-- 服务保障相关 -->
         <dependency>
-            <groupId>cn.iocoder.cloud</groupId>
-            <artifactId>yudao-spring-boot-starter-protection</artifactId>
+            <groupId>com.foxgo.platform</groupId>
+            <artifactId>foxgo-spring-boot-starter-protection</artifactId>
         </dependency>
 
         <!-- Registry 注册中心相关 -->
@@ -191,9 +191,9 @@
 
         <!-- RPC 远程调用相关 -->
         <dependency>
-            <groupId>cn.iocoder.cloud</groupId>
-            <artifactId>yudao-spring-boot-starter-rpc</artifactId>
-            <!-- 目的：yudao-server 单体启动，禁用 openfeign -->
+            <groupId>com.foxgo.platform</groupId>
+            <artifactId>foxgo-spring-boot-starter-rpc</artifactId>
+            <!-- 目的：foxgo-server 单体启动，禁用 openfeign -->
             <exclusions>
                 <exclusion>
                     <groupId>org.springframework.cloud</groupId>

@@ -1,8 +1,8 @@
-# 芋道 Cloud 微服务版 Docker Compose 入门部署：gateway + system-server + infra-server + 前端 Nginx + MySQL + Redis + Nacos
+# FoxGo Platform 微服务版 Docker Compose 入门部署：gateway + system-server + infra-server + 前端 Nginx + MySQL + Redis + Nacos
 # 使用说明见同目录 README.md；需 Docker Compose V2.20.2 及以上（docker compose 命令）
 # 本文件中的相对路径，均相对于本文件所在目录，与执行命令时的当前目录无关
 
-name: yudao-cloud
+name: foxgo-platform
 
 # 所有 Java 服务共用：profile、JVM 参数、Nacos 注册中心 + 配置中心
 x-common-env: &common-env
@@ -116,10 +116,10 @@ services:
       start_period: 30s
 
   gateway:
-    # 使用模块自带的 Dockerfile，需先在源码根目录执行 mvn 打包，生成 yudao-gateway/target/yudao-gateway.jar
+    # 使用模块自带的 Dockerfile，需先在源码根目录执行 mvn 打包，生成 yudao-gateway/target/foxgo-gateway.jar
     build:
       context: ../../yudao-gateway
-    image: yudao-gateway:${IMAGE_TAG:-local}
+    image: foxgo-gateway:${IMAGE_TAG:-local}
     restart: unless-stopped
     environment:
       <<: *common-env
@@ -137,7 +137,7 @@ services:
   system-server:
     build:
       context: ../../yudao-module-system/yudao-module-system-server
-    image: yudao-module-system-server:${IMAGE_TAG:-local}
+    image: foxgo-module-system-server:${IMAGE_TAG:-local}
     restart: unless-stopped
     environment:
       <<: *app-env
@@ -157,7 +157,7 @@ services:
   infra-server:
     build:
       context: ../../yudao-module-infra/yudao-module-infra-server
-    image: yudao-module-infra-server:${IMAGE_TAG:-local}
+    image: foxgo-module-infra-server:${IMAGE_TAG:-local}
     restart: unless-stopped
     environment:
       <<: *app-env
@@ -190,6 +190,10 @@ services:
       - gateway
 
 volumes:
+  # 保留旧卷名，项目名升级为 foxgo-platform 后仍复用原有数据卷，避免启动时创建空库
   mysql-data:
+    name: yudao-cloud_mysql-data
   redis-data:
+    name: yudao-cloud_redis-data
   nacos-data:
+    name: yudao-cloud_nacos-data

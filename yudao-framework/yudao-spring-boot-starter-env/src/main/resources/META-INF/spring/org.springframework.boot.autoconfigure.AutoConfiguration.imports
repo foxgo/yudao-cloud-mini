@@ -1,2 +1,2 @@
-cn.iocoder.yudao.framework.env.config.YudaoEnvWebAutoConfiguration
-cn.iocoder.yudao.framework.env.config.YudaoEnvRpcAutoConfiguration
+com.foxgo.platform.framework.env.config.YudaoEnvWebAutoConfiguration
+com.foxgo.platform.framework.env.config.YudaoEnvRpcAutoConfiguration

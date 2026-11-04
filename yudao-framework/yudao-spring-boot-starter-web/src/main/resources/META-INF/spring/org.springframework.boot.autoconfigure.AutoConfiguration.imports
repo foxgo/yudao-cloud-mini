@@ -1,8 +1,8 @@
-cn.iocoder.yudao.framework.apilog.config.YudaoApiLogAutoConfiguration
-cn.iocoder.yudao.framework.jackson.config.YudaoJacksonAutoConfiguration
-cn.iocoder.yudao.framework.swagger.config.YudaoSwaggerAutoConfiguration
-cn.iocoder.yudao.framework.web.config.YudaoWebAutoConfiguration
-cn.iocoder.yudao.framework.apilog.config.YudaoApiLogRpcAutoConfiguration
-cn.iocoder.yudao.framework.xss.config.YudaoXssAutoConfiguration
-cn.iocoder.yudao.framework.banner.config.YudaoBannerAutoConfiguration
-cn.iocoder.yudao.framework.encrypt.config.YudaoApiEncryptAutoConfiguration
+com.foxgo.platform.framework.apilog.config.YudaoApiLogAutoConfiguration
+com.foxgo.platform.framework.jackson.config.YudaoJacksonAutoConfiguration
+com.foxgo.platform.framework.swagger.config.YudaoSwaggerAutoConfiguration
+com.foxgo.platform.framework.web.config.YudaoWebAutoConfiguration
+com.foxgo.platform.framework.apilog.config.YudaoApiLogRpcAutoConfiguration
+com.foxgo.platform.framework.xss.config.YudaoXssAutoConfiguration
+com.foxgo.platform.framework.banner.config.YudaoBannerAutoConfiguration
+com.foxgo.platform.framework.encrypt.config.YudaoApiEncryptAutoConfiguration
